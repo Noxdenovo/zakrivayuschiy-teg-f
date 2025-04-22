@@ -1,1 +1,40 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --flexible-width: 100%;
+  --page-main-font: "Inter-Variable";
+  --card-heading-font-weight: 700;
+  --card-text-font-weight: 400;
+  --card-heading-font-size: 18px;
+  --card-text-font-size: 18px;
+  --card-text-font-size: 18px;
+  --image-label-font-size: 14px;
+  --card-text-inline-padding: 25px;
+  --card-text-block-margin: 25px;
+  --header-logo-font-size: 49px;
+  --header-title-font-size: 14px;
+  --accent-font: "PressStart2P-Regular";
+  --accent-font-weight: 400;
+  --accent-color: rgba(0, 0, 0, 1);
+  --header-min-block-size: calc(327px + 2 * clamp(0rem, 6.826vh - 2.846rem, 1.25rem));
+  --save-dialog-inline-padding: 40px;
+  --page-bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0, 0, 0, 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --button-text-color: #fff;
+  --button-text-font-size: 14px;
+  --heart-contour-fill: var(--accent-color);
+  --main-animation-fill: #ff0000;
+}
+
+@media (width >= 376px) {
+  :root {
+    --flexible-width: clamp(23.5rem, 30.451vw + 16.344rem, 43.75rem);
+
+    --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --header-min-block-size: calc(327px + 2 * clamp(0rem, 6.826vh - 2.846rem, 1.25rem));
+    --save-dialog-inline-padding: 31.5px;
+  }
+}
