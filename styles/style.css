@@ -232,7 +232,7 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr min-content;
   margin-inline: auto;
-  padding-block: 32px;
+  padding-block: var(--save-dialog-block-padding);
   padding-inline: var(--save-dialog-inline-padding);
   row-gap: 30px;
   max-inline-size: 341px;
