@@ -18,7 +18,7 @@
   align-items: center;
   font-family: var(--page-main-font), sans-serif;
   background-image: var(--page-bg-gradient);
-  background-size: cover;
+  background-size: contain;
   background-color: white;
   background-attachment: fixed;
 }

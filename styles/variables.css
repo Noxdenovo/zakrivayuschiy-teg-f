@@ -17,12 +17,24 @@
   --accent-font: "PressStart2P-Regular";
   --accent-font-weight: 400;
   --accent-color: rgba(0, 0, 0, 1);
-  --header-min-block-size: calc(327px + 2 * clamp(0rem, 6.826vh - 2.846rem, 1.25rem));
+  /* --header-min-block-size: calc(327px + 2 * clamp(0rem, 6.826vh - 2.846rem, 1.25rem)); */
   --save-dialog-inline-padding: 40px;
   --save-dialog-block-padding: 32px;
 
-  --page-bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2.1px, rgb(0 0 0 / 0) 2.1px 4.2px),
-    repeating-linear-gradient(180deg, #d3d3d3 0 2.1px, rgb(0 0 0 / 0) 2.1px 4.2px),
+  --page-bg-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      rgb(0 0 0 / 0) 2px 4px,
+      #d3d3d3 4px 6px,
+      rgb(0 0 0 / 0) 6px 8px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0 2px,
+      rgb(0 0 0 / 0) 2px 4px,
+      #d3d3d3 4px 6px,
+      rgb(0 0 0 / 0) 6px 8px
+    ),
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --button-text-color: #fff;
