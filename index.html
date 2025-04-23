@@ -22,8 +22,8 @@
         <div class="card__image-container">
           <img
             class="card__image sprint-0-image"
-            alt="Дорога уходящая вдаль"
-            src="./images/long-road.jpg"
+            alt="Дорога уходящая вдаль в закат"
+            src="./images/long-road-sunset.jpg"
           />
           <span class="card__image-label">&lt;/HTML&gt;</span>
         </div>
@@ -72,7 +72,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -134,7 +134,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -143,8 +143,8 @@
         <div class="card__image-container">
           <img
             class="card__image question-mark"
-            alt="светящаяся будка с двумя вопросительными знаками"
-            src="./images/question-mark.jpg"
+            alt="Знак вопроса парящий над открытой коробкой"
+            src="./images/question-mark-box.jpg"
           />
           <span class="card__image-label">&lt;CSS&gt;</span>
         </div>
@@ -195,7 +195,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -203,9 +203,9 @@
         <h2 class="card__heading">2 спринт: Погоня за идеалом</h2>
         <div class="card__image-container">
           <img
-            class="card__image dream-image"
-            src="./images/dream-image.jpg"
-            alt="Подушка в форме сердца с биркой, на бирке написано if you can dream it you can do it"
+            class="card__image impossible-jump"
+            src="./images/impossible-jump.jpg"
+            alt="Прыгающий через пропасть человек над надписью impossible с оторванными буквами i and m"
           />
           <span class="card__image-label">&lt;decisions&gt;</span>
         </div>
@@ -258,7 +258,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -267,8 +267,8 @@
         <div class="card__image-container">
           <img
             class="card__image dark-flower"
-            src="./images/dark-flower.jpg"
-            alt="одуванчик на темном фоне"
+            src="./images/dark-flowers.jpg"
+            alt="три цветка на темном фоне"
           />
           <span class="card__image-label">care</span>
         </div>
@@ -320,7 +320,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -328,9 +328,9 @@
         <h2 class="card__heading">3 спринт: Обходные стратегии</h2>
         <div class="card__image-container">
           <img
-            class="card__image angle-image"
-            src="./images/angle.jpg"
-            alt="вид здания под углом"
+            class="card__image prism-image"
+            src="./images/prism.jpg"
+            alt="призма, преломляющая свет на темном фоне"
           />
           <span class="card__image-label">&lt;support&gt;</span>
         </div>
@@ -380,14 +380,18 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
       <article class="card">
         <h2 class="card__heading">3 спринт: Когда опускаются руки</h2>
-        <div class="card__image-container winding-road">
-          <img class="card__image" src="./images/winding-road.jpg" alt="виляющая дорога в лесу" />
+        <div class="card__image-container">
+          <img
+            class="card__image winding-road-hills"
+            src="./images/winding-road-hills.jpg"
+            alt="виляющая дорога между холмами"
+          />
           <span class="card__image-label">&lt;lifes-style: none&gt;</span>
         </div>
         <div class="card__text-container">
@@ -439,7 +443,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -448,7 +452,7 @@
         <div class="card__image-container">
           <img
             class="card__image here-image"
-            src="./images/you-are-here.jpg"
+            src="./images/you-are-here-sign.jpg"
             alt="неоновая надпись 'you are here'"
           />
           <span class="card__image-label">&lt;experience&gt;</span>
@@ -501,7 +505,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button"><span class="button__text">Like</span></button>
+            <button class="card__like-button button"><span class="button__text">Like</span></button>
           </div>
         </div>
       </article>
@@ -514,10 +518,12 @@
           <p class="save-dialog__message">Вставьте дискету, чтобы продолжить</p>
         </div>
 
-        <button onclick="window['save-dialog'].close()" class="save-dialog__button">OK</button>
+        <button onclick="window['save-dialog'].close()" class="save-dialog__button button">
+          <span class="button__text">OK</span>
+        </button>
       </dialog>
     </main>
-    <button class="save-button" onclick="window['save-dialog'].showModal()">
+    <button class="save-button button" onclick="window['save-dialog'].showModal()">
       <svg class="save-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
         <use href="./svg/save-icon.svg#save-icon"></use>
       </svg>

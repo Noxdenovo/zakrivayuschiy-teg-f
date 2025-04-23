@@ -85,6 +85,7 @@
 }
 
 .like-icon.is-liked .heart {
+  transform-origin: center center;
   animation: heart-pop 0.3s 0.1s ease-in;
 }
 
