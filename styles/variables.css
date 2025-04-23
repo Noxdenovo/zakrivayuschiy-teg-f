@@ -22,7 +22,7 @@
   --save-dialog-block-padding: 32px;
 
   --page-bg-gradient: repeating-linear-gradient(
-      to right,
+      90deg,
       #d3d3d3 0 2px,
       rgb(0 0 0 / 0) 2px 4px,
       #d3d3d3 4px 6px,
