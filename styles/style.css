@@ -19,7 +19,7 @@
   font-family: var(--page-main-font), sans-serif;
   background-image: var(--page-bg-gradient);
   background-size: contain;
-  background-color: white;
+  background-color: var(--page-bg-color);
   background-attachment: fixed;
 }
 
@@ -28,19 +28,19 @@
 }
 .header {
   margin-block-start: 100px;
-  padding-inline: var(--header-inline-padding);
   padding-block: var(--header-block-padding);
+  padding-inline: var(--header-inline-padding);
   border: 2px solid var(--accent-color);
   text-align: center;
-  min-block-size: var(--header-min-block-size);
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy, sans-serif;
 }
 
-.page-block {
+.header,
+.card {
   background-color: var(--page-block-color);
 }
 
@@ -69,10 +69,9 @@
 }
 
 .card__heading {
-  font-weight: var(--card-heading-font-weight);
+  font-variation-settings: var(--card-heading-font-weight);
   font-size: var(--card-heading-font-size);
   line-height: 1.3em;
-  vertical-align: center;
   padding-block: 3px;
   padding-inline: 10px;
 }
@@ -91,13 +90,14 @@ img {
 
 .card__image-label {
   position: absolute;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, sans-serif;
   font-size: var(--image-label-font-size);
   top: 23px;
   right: 11px;
   mix-blend-mode: hard-light;
   z-index: 1;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  opacity: 0.5;
 }
 
 .card__text-container {
@@ -112,6 +112,7 @@ img {
   font-size: var(--card-text-font-size);
   line-height: 21px;
   letter-spacing: 0;
+  font-variation-settings: var(--card-text-font-weight);
 }
 
 button {
@@ -135,6 +136,8 @@ button {
   position: relative;
   border: 2px solid var(--accent-color);
   overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -160,11 +163,6 @@ button {
   min-inline-size: 130px;
   min-block-size: 38px;
 }
-
-/* .card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color);
-} */
 
 .button__text {
   font-family: var(--accent-font);
@@ -236,7 +234,6 @@ button {
   padding-inline: var(--save-dialog-inline-padding);
   row-gap: 30px;
   max-inline-size: 341px;
-  min-block-size: 191px;
 }
 
 .save-dialog[open]::backdrop {
@@ -270,12 +267,13 @@ button {
   min-block-size: 38px;
 }
 
+.uppercase-text {
+  text-transform: uppercase;
+}
+
 @media (width >= 376px) {
   .card__image-label {
     right: 25px;
-  }
-  .card__heading {
-    min-block-size: 31px;
   }
 
   .save-dialog[open] {
@@ -289,7 +287,6 @@ button {
     margin-inline-end: 5px;
     inline-size: 21px;
     block-size: 21px;
-    margin-bottom: -3px;
   }
 
   .save-button {
@@ -300,39 +297,39 @@ button {
   }
 }
 
-.sprint-0-image {
+.brightness-filter {
   filter: brightness(40%);
 }
 
-.clean-slate {
+.contrast-filter {
   filter: contrast(120%);
   object-position: -50px;
 }
 
-.question-mark {
+.blur-filter {
   filter: blur(5px);
 }
 
-.impossible-jump {
+.grayscale-filter {
   filter: grayscale(1);
 }
 
-.dark-flower {
+.saturate-filter {
   filter: saturate(100%);
 }
 
-.prism-image {
+.invert-filter {
   filter: invert(25%);
   object-fit: cover;
   object-position: bottom;
 }
 
-.winding-road-hills {
+.saturate-grayscale-filter {
   filter: saturate(200%), grayscale(0.5);
 }
 
-.here-image {
-  filter: saturate(120%);
+.hue-rotate-filter {
+  filter: hue-rotate(90deg);
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
