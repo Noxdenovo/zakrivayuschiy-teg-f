@@ -69,7 +69,7 @@
 }
 
 .card__heading {
-  font-variation-settings: var(--card-heading-font-weight);
+  font-variation-settings: "wght" var(--card-heading-font-weight);
   font-size: var(--card-heading-font-size);
   line-height: 1.3em;
   padding-block: 3px;
@@ -112,7 +112,7 @@ img {
   font-size: var(--card-text-font-size);
   line-height: 21px;
   letter-spacing: 0;
-  font-variation-settings: var(--card-text-font-weight);
+  font-variation-settings: "wght" var(--card-text-font-weight);
 }
 
 button {

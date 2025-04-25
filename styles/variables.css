@@ -5,8 +5,8 @@
   --page-main-font: "Inter-Variable";
   --page-block-color: #fff;
   --header-block-padding: 120px;
-  --card-heading-font-weight: "wght" 700;
-  --card-text-font-weight: "wght" 400;
+  --card-heading-font-weight: 700;
+  --card-text-font-weight: 400;
   --card-heading-font-size: 18px;
   --card-text-font-size: 18px;
   --card-text-font-size: 18px;
@@ -15,7 +15,7 @@
   --card-text-block-margin: 25px;
   --header-logo-font-size: 49px;
   --header-title-font-size: 14px;
-  --accent-font: "PressStart2P-Regular";
+  --accent-font: "PressStart2P";
   --accent-font-weight: 400;
   --accent-color: rgba(0, 0, 0, 1);
   --save-dialog-inline-padding: 40px;
